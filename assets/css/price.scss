@@ -1,0 +1,23 @@
+.price {
+  
+}
+
+.price__cost {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  font-weight: 600;
+}
+
+.price__price {
+  font-size: 100px;
+  font-weight: 600;
+  line-height: 80px;
+}
+
+.price__description {
+  text-align:right;
+  margin-top: 1rem;
+  opacity: .5;
+}

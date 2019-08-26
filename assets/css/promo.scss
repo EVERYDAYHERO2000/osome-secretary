@@ -1,0 +1,19 @@
+.promo {
+  position: sticky;
+  background: url(../../assets/img/phone.png);
+  height: 95vh;
+  width: 550px;
+  right: 0;
+  top: 5vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform-origin: center;
+  transform: translateY(50px) scale(.95);
+  transition: transform .6s .2s ease;
+}
+
+.promo_visible {
+  transform: translateY(0px) scale(1);
+  transition: transform .6s .2s ease;
+}

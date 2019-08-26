@@ -1,0 +1,138 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: system,-apple-system,BlinkMacSystemFont,\.SFNSDisplay-Regular,Helvetica\ Neue,Lucida\ Grande,Arial,sans-serif;
+  font-weight: 200;
+  letter-spacing: .5px;
+  font-size: 24px;
+  color: #433B54;
+  line-height: 1.4;
+  background-color: #fafafa;
+}
+
+.page {
+  box-sizing: border-box;
+}
+
+.outer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.outer_max-height {
+  height: 100vh;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+}
+
+.screen {
+  height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
+  width: 100%;
+}
+
+.screen__part {
+  height: 80vh;
+  min-height: 80vh;
+  max-height: 80vh;
+}
+
+.screen__part-auto {
+  
+}
+
+.dark-back {
+  background-color: #25212C;
+  color: #fafafa;
+  font-weight: 100;
+  letter-spacing: .8px;
+}
+
+h1 {
+  font-size: 52px;
+  font-weight: 200;
+  margin:0;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 52px;
+  font-weight: 200;  
+  margin:0;
+  line-height: 1.2;
+}
+
+h4 {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  color: rgba(255,255,255,.7);
+}
+
+p {
+  max-width: 600px;
+}
+
+.section {
+  padding: 1.5rem 0;
+  box-sizing: border-box;
+}
+
+.h-flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+} 
+
+.v-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.max-size {
+  width: 100%;
+  height: 100%;
+}
+
+.s-screens {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.text_m {
+  font-size: 32px;
+}
+
+.text_center {
+  text-align: center;  
+}
+
+#cover_1 {
+  background-image: url(../../assets/img/cover.png);
+  background-color: rgb(231, 225, 213);
+  background-position: center bottom -20px;
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+
+#cover_2 {
+  background-color: #F3F3F3;
+  background-image: url(../../assets/img/cover_2.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

@@ -1,0 +1,45 @@
+.btn {
+  background-color: #2978FD;
+  display: inline-block;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 1rem 1.4rem 1rem 3rem;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .2s .3s;
+  transform: translateY(0rem);
+  position: relative;
+  opacity: 1;
+  word-break: keep-all;
+  box-shadow: rgba(41, 120, 253, 0) 0px 0px 0px 0px;
+  transition: all .2s .1s
+}
+
+.btn:hover {
+  box-shadow: rgba(41, 120, 253, 0.51) 0px 10px 30px 0px;
+  transition: all .2s .1s
+}
+
+.btn:before {
+  content:'';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top:0;
+  left: 0;
+  background-image: url(../../assets/img/message.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translate(18px, 20px);
+}
+
+.btn-group {
+  margin-top: 4rem;
+}
+
+.btn_hidden {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: all .2s .3s;
+}

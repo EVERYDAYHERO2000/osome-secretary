@@ -1,0 +1,30 @@
+.qa {
+  display: none;
+}
+
+.qa__i {
+  padding: 1rem 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.qa__i:last-child {
+  border-bottom:none;
+}
+
+.qa__title {
+  position: relative;
+  cursor:pointer;
+}
+
+.qa__title:before {
+  content: '+';
+  font-weight: 100;
+  position: absolute;
+  transform: translate(-20px,-1px);
+}
+
+.qa_selected {
+  display: block;
+}
+
+
