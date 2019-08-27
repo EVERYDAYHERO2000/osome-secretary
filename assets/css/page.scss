@@ -8,6 +8,8 @@ body {
   color: #433B54;
   line-height: 1.4;
   background-color: #fafafa;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 .page {
@@ -61,6 +63,10 @@ h1 {
   line-height: 1.2;
 }
 
+h1 strong {
+  letter-spacing: 1px;
+}
+
 h2 {
   font-size: 48px;
   font-weight: 200;  
@@ -84,6 +90,11 @@ p {
   padding: 1.5rem 0;
   box-sizing: border-box;
 }
+
+.section:last-child {
+  padding-bottom: 0;
+}
+
 
 .h-flex {
   display: flex;
