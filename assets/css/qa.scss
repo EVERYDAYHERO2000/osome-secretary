@@ -20,11 +20,35 @@
   content: '+';
   font-weight: 100;
   position: absolute;
-  transform: translate(-20px,-1px);
+  transform-origin: center;
+  transform: translate(-20px,-1px) rotate(0);
+  transition: all .3s ease;
 }
 
 .qa_selected {
   display: block;
+}
+
+.qa__i .qa__description {
+  overflow: hidden;
+  
+  max-height: 0;
+  opacity: 0;
+  transition: all .3s ease;
+  font-size: 18px;
+}
+
+.qa__i.qa__i_visible .qa__description {
+  overflow: hidden;
+  
+  opacity: 1;
+  max-height: 1000px;
+  transition: all .3s ease;
+}
+
+.qa__i.qa__i_visible .qa__title:before {
+  transform: translate(-20px,-1px) rotate(180deg);
+  transition: all .3s ease;
 }
 
 

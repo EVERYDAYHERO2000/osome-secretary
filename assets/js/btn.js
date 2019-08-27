@@ -29,6 +29,7 @@ $(function(){
     
     if ( $pos_3[0].getBoundingClientRect().top < $(window).outerHeight() + 50  ) {
       
+
        
        if ( !$pos_3.is('.btn_fixed') ) {
          $pos_4.addClass('btn_hidden-cut').removeClass('btn_visible-cut');
