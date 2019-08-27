@@ -1,6 +1,9 @@
 .logo {
   transform: translate(-.8rem, -1.5rem);
   position: relative;
+  opacity: 0;
+  animation: visible .2s .3s alternate forwards ease; 
+  cursor: pointer;
 }
 
 .logo__online {
@@ -8,7 +11,7 @@
   position: absolute;
   transform-origin: center;
   transform: scale(.8);
-  animation: show .3s 1s alternate forwards ease;
+  animation: show .3s 1.3s alternate forwards ease;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -35,7 +38,8 @@
 
 .logo__bot {
   transform-origin: 50px 34px;
-  animation: yo-yo .5s .4s alternate forwards ease;
+  transform: scale(.7) rotate(5deg);
+  animation: yo-yo .5s .3s alternate forwards ease;
 }
 
 @keyframes yo-yo {
@@ -45,6 +49,16 @@
   
   100% {
     transform: scale(1) rotate(0);
+  }
+}
+
+@keyframes visible {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
   }
 }
 

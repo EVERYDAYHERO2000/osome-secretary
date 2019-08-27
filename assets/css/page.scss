@@ -38,9 +38,9 @@ body {
 }
 
 .screen__part {
-  height: 80vh;
-  min-height: 80vh;
-  max-height: 80vh;
+  height: 85vh;
+  min-height: 85vh;
+  max-height: 85vh;
 }
 
 .screen__part-auto {
@@ -123,10 +123,10 @@ p {
 
 #cover_1 {
   background-image: url(../../assets/img/cover.png);
-  background-color: rgb(231, 225, 213);
-  background-position: center bottom -20px;
+  background-color: #f3f3f3;
+  background-position: center bottom;
   background-repeat: no-repeat;
-  background-size: 70%;
+  background-size: contain;
 }
 
 #cover_2 {
