@@ -1,10 +1,16 @@
-.promo {
+.phone {
   position: sticky;
-  background: url(../../assets/img/phone.png);
-  height: 95vh;
   width: 550px;
   right: 0;
-  top: 5vh;
+  top: 2vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.promo {
+  height: 93vh;
+  width: 100%;
+  background: url(../../assets/img/phone.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -16,4 +22,22 @@
 .promo_visible {
   transform: translateY(0px) scale(1);
   transition: transform .6s .2s ease;
+}
+
+.app-rate {
+  transform: translate(110px,-65px);
+}
+
+.app-rate__stars {
+  color: #ffc435;
+  letter-spacing: 2px;
+}
+
+.app-rate__rew {
+  font-size: 18px;  
+  transform: translate(0,-10px);
+}
+
+.app-rate__rate {
+  font-size: 48px;
 }
