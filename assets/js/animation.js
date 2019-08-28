@@ -83,12 +83,13 @@ $(function () {
                 $('#popup').css({
                   'opacity': '0',
                   'transform': 'translate(0px, 50px) scale(.8)',
+                  'transition': 'all .4s ease'
                 });
 
                 $('#message_4').css({
                   'opacity': '1',
                   'transform': 'translate(173px, 373px)',
-                  'transition': 'all .3s ease'
+                  'transition': 'all .3s .3s ease'
                 });
 
                 setTimeout(function () {
@@ -101,7 +102,7 @@ $(function () {
                   
 
 
-                }, 800)
+                }, 900)
                 
               }, 2100)
 
