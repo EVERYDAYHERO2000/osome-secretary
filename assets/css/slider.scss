@@ -9,6 +9,7 @@
 
 .slider__inner {
   display: flex;
+  transition: all .3s ease;
 }
 
 .slider__s {
@@ -41,17 +42,26 @@
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  padding: 0 3rem;
-  top: 50%;
+  padding: 0;
+  top: 0%;
+  height: 100%;
+
 }
 
 .slider__c {
-  width: 24px;
-  height: 25px;
+  width: 100px;
+  height: 100%;
   background-image: url(../../assets/img/prev.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 20px;
+  background-position: center;
   cursor: pointer;
+}
+
+.slider__c.disabled {
+  opacity: .3;
+  pointer-events: none;
+  cursor: default;
 }
 
 .slider__c-prev {
