@@ -99,9 +99,6 @@ $(function () {
                     'transition': 'all .3s ease'
                   });
 
-                  
-
-
                 }, 900)
                 
               }, 2100)
@@ -114,7 +111,7 @@ $(function () {
 
       }, 500)
 
-    }, 1000)
+    }, 300)
 
     window.startAnim_1_check = true;
 
