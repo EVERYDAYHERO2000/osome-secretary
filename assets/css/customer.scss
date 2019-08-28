@@ -1,0 +1,34 @@
+.customer {
+  display: flex;
+  margin: 1rem 0;
+  align-items: center;
+}
+
+.customer__avatar {
+  width: 80px;
+  height: 80px;
+  min-width: 80px;
+  min-height: 80px;
+  max-width: 80px;
+  max-height: 80px;
+  margin-right: 1rem;
+  border-radius: 50%;
+  background-color: #34384c;
+  position: relative;
+}
+
+.custemer__online {
+  position: absolute;
+  transform-origin: center;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  top: 60px;
+  left: 60px;
+  background-color: #43d843;
+}
+
+.customer__name {
+  font-size: 18px;
+}
