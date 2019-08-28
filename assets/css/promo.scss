@@ -10,13 +10,20 @@
 .promo {
   height: 93vh;
   width: 100%;
-  background: url(../../assets/img/phone.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  transform-origin: center;
   transform: translateY(50px) scale(.95);
   transition: transform .6s .2s ease;
+  font-size: 11px; 
+}
+
+.promo svg {
+  height: 100%;
+}
+
+.promo svg tspan {
+  font-size: 100%;
+  user-select: none;
+  opacity: .9;
+  letter-spacing: normal;
 }
 
 .promo_visible {
