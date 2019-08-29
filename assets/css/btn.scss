@@ -13,7 +13,9 @@
   opacity: 1;
   word-break: keep-all;
   box-shadow: rgba(41, 120, 253, 0) 0px 0px 0px 0px;
-  transition: all .2s .1s
+  transition: all .2s .1s;
+  word-break: keep-all;
+  white-space: nowrap;  
 }
 
 .btn:hover {

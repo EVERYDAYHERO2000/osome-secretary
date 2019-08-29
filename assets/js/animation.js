@@ -3,117 +3,121 @@ $(function () {
   var $svg = $('.promo svg');
 
   animReset();
-  
+
   function animReset() {
     $svg.find('#message_1, #message_2, #message_3, #message_4, #message_5, #popup').css({
       'opacity': '0',
       'transform-origin': 'center'
     })
 
-    $('#message_1').css({
+    $svg.find('#message_1').css({
       'transform': 'translate(50px, 66px)',
     });
 
-    $('#message_2').css({
+    $svg.find('#message_2').css({
       'transform': 'translate(231px, 205px)',
     });
 
-    $('#message_3').css({
+    $svg.find('#message_3').css({
       'transform': 'translate(50px, 235px)',
     });
 
-    $('#popup').css({
+    $svg.find('#popup').css({
       'transform': 'translate(0, 139px) scale(.8)',
     });
 
-    $('#sign').css({
+    $svg.find('#sign').css({
       'stroke-dasharray': '1060 1060',
       'stroke-dashoffset': '1060'
     });
 
-    $('#message_4').css({
+    $svg.find('#message_4').css({
       'transform': 'translate(173px, 383px)',
     });
 
-    $('#message_5').css({
+    $svg.find('#message_5').css({
       'transform': 'translate(50px, 416px)',
     });
-    
-    window.startAnim_1_check = false;
-    
+
   }
 
   function startAnim() {
 
-    setTimeout(function () {
-      $('#message_1').css({
-        'opacity': '1',
-        'transform': 'translate(50px, 56px)',
-        'transition': 'all .2s ease'
-      });
+    if ($svg.is(':not(.animated-run)')) {
+
+      var s = 0;
+      
+      setTimeout(function () {
+        $svg.find('#message_1').css({
+          'opacity': '1',
+          'transform': 'translate(50px, 56px)',
+          'transition': 'all .2s ease'
+        });
+
+      }, s += 300);
 
       setTimeout(function () {
-        $('#message_2').css({
+        $svg.find('#message_2').css({
           'opacity': '1',
           'transform': 'translate(231px, 195px)',
           'transition': 'all .2s ease'
         });
 
-        setTimeout(function () {
-          $('#message_3').css({
-            'opacity': '1',
-            'transform': 'translate(50px, 225px)',
-            'transition': 'all .2s ease'
-          });
+      }, s += 500);
 
-          setTimeout(function () {
-            $('#popup').css({
-              'opacity': '1',
-              'transform': 'translate(0, 139px) scale(1)',
-              'transition': 'all .2s ease'
-            });
+      setTimeout(function () {
+        $svg.find('#message_3').css({
+          'opacity': '1',
+          'transform': 'translate(50px, 225px)',
+          'transition': 'all .2s ease'
+        });
 
-            setTimeout(function () {
-              $('#sign').css({
-                'stroke-dashoffset': '0',
-                'transition': 'all 2s ease'
-              });
+      }, s += 800);
 
-              setTimeout(function () {
-                $('#popup').css({
-                  'opacity': '0',
-                  'transform': 'translate(0px, 50px) scale(.8)',
-                  'transition': 'all .4s ease'
-                });
+      setTimeout(function () {
+        $svg.find('#popup').css({
+          'opacity': '1',
+          'transform': 'translate(0, 139px) scale(1)',
+          'transition': 'all .2s ease'
+        });
 
-                $('#message_4').css({
-                  'opacity': '1',
-                  'transform': 'translate(173px, 373px)',
-                  'transition': 'all .3s .3s ease'
-                });
+      }, s += 1000);
 
-                setTimeout(function () {
-                  $('#message_5').css({
-                    'opacity': '1',
-                    'transform': 'translate(50px, 406px)',
-                    'transition': 'all .3s ease'
-                  });
+      setTimeout(function () {
+        $svg.find('#sign').css({
+          'stroke-dashoffset': '0',
+          'transition': 'all 2s ease'
+        });
 
-                }, 900)
-                
-              }, 2100)
+      }, s += 800);
 
-            }, 800)
+      setTimeout(function () {
+        $svg.find('#popup').css({
+          'opacity': '0',
+          'transform': 'translate(0px, 50px) scale(1)',
+          'transition': 'all .4s ease'
+        });
 
-          }, 1000)
+        $svg.find('#message_4').css({
+          'opacity': '1',
+          'transform': 'translate(173px, 373px)',
+          'transition': 'all .3s .3s ease'
+        });
 
-        }, 800)
+      }, s += 2100);
 
-      }, 500)
+      setTimeout(function () {
+        $svg.find('#message_5').css({
+          'opacity': '1',
+          'transform': 'translate(50px, 406px)',
+          'transition': 'all .3s ease'
+        });
 
-    }, 300)
+      }, s += 900);
 
-    window.startAnim_1_check = true;
+    }
+
+    $svg.addClass('animated-run');
 
   };
 
