@@ -53,8 +53,10 @@ $(function () {
           'transform': 'translate(50px, 56px)',
           'transition': 'all .2s ease'
         });
+        
+        $svg.find('#message_1 .message').addClass('message-show');
 
-      }, s += 300);
+      }, s += 100);
 
       setTimeout(function () {
         $svg.find('#message_2').css({
@@ -62,6 +64,8 @@ $(function () {
           'transform': 'translate(231px, 195px)',
           'transition': 'all .2s ease'
         });
+        
+        $svg.find('#message_2 .message').addClass('message-show');
 
       }, s += 500);
 
@@ -71,6 +75,8 @@ $(function () {
           'transform': 'translate(50px, 225px)',
           'transition': 'all .2s ease'
         });
+        
+        $svg.find('#message_3 .message').addClass('message-show');
 
       }, s += 800);
 
@@ -81,7 +87,7 @@ $(function () {
           'transition': 'all .2s ease'
         });
 
-      }, s += 1000);
+      }, s += 800);
 
       setTimeout(function () {
         $svg.find('#sign').css({
@@ -103,6 +109,8 @@ $(function () {
           'transform': 'translate(173px, 373px)',
           'transition': 'all .3s .3s ease'
         });
+        
+        $svg.find('#message_4 .message').addClass('message-show');
 
       }, s += 2100);
 
@@ -112,6 +120,8 @@ $(function () {
           'transform': 'translate(50px, 406px)',
           'transition': 'all .3s ease'
         });
+        
+        $svg.find('#message_5 .message').addClass('message-show');
 
       }, s += 900);
 
@@ -120,8 +130,27 @@ $(function () {
     $svg.addClass('animated-run');
 
   };
+  
+  function animation_1_hide(){
+    $svg.find('#animation_1').css({
+      'opacity' : 0,
+      'transition' : 'all .2s ease'
+    });
+    
+  }
+  
+  function animation_1_show(){
+    $svg.find('#animation_1').css({
+      'opacity' : 1,
+      'transition' : 'all .2s ease'
+    });
+    
+  }
 
   window.startAnim_1 = startAnim;
   window.animReset = animReset;
+  
+  window.animation_1_hide = animation_1_hide;
+  window.animation_1_show = animation_1_show;
 
 });

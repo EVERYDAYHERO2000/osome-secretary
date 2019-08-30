@@ -53,3 +53,28 @@
   font-size: 48px;
 }
 
+.message {
+  transform: translateY(-15px);
+}
+
+.message-show {
+  animation: show-message .6s ease-out alternate forwards;
+}
+
+@keyframes show-message {
+  0% {
+    transform : translateY(-15px);
+  }
+  50% {
+    transform : translateY(10px);
+  }
+  65% {
+    transform : translateY(-5px);
+  }
+  75% {
+    transform : translateY(2px);
+  }
+  100% {
+    transform : translateY(0);
+  }
+}

@@ -16,25 +16,34 @@ $(function(){
   function position(){
     
     var e = $screen_1[0].getBoundingClientRect();
-    var top = $(window).outerHeight() / 4;
-    var height = $(window).outerHeight() * 1.25;
+    var top = 0;
+    var height = $(window).outerHeight();
     
     active = '';
     
-    if ( $screen_1[0].getBoundingClientRect().top > top && $screen_1[0].getBoundingClientRect().top < height ){
-      active = '#scrren_1';
+    if ( $screen_1[0].getBoundingClientRect().top < height ){
+      active = '#screen_1';
     }
     
-    if ( $screen_2[0].getBoundingClientRect().top > top && $screen_2[0].getBoundingClientRect().top < height ){
-      active = '#scrren_2';
+    if ( $screen_2[0].getBoundingClientRect().top * 2 < height ){
+      active = '#screen_2';
     }
     
-    if ( $screen_3[0].getBoundingClientRect().top > top && $screen_3[0].getBoundingClientRect().top < height ){
-      active = '#scrren_3';
+    if ( $screen_3[0].getBoundingClientRect().top * 2 < height ){
+      active = '#screen_3';
     }
     
-    if ( $screen_4[0].getBoundingClientRect().top > top && $screen_4[0].getBoundingClientRect().top < height ){
-      active = '#scrren_4';
+    if ( $screen_4[0].getBoundingClientRect().top * 2 < height ){
+      active = '#screen_4';
+    }
+    
+    
+    if ( active == '#screen_1' ){
+      window.animation_1_show();
+
+    } else {
+      window.animation_1_hide();
+
     }
     
     console.log(active)
