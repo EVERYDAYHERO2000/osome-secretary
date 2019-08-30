@@ -39,10 +39,20 @@ $(function(){
     
     
     if ( active == '#screen_1' ){
-      window.animation_1_show();
+      window.startAnim_1();
+      window.animation_show(1);
 
     } else {
-      window.animation_1_hide();
+      window.animation_hide(1);
+
+    }
+    
+    if ( active == '#screen_2' ){
+      window.startAnim_2();
+      window.animation_show(2);
+
+    } else {
+      window.animation_hide(2);
 
     }
     

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256px" height="523px" viewBox="0 0 256 523" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>animation_2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M10,0 L181,0 L181,19 C181,24.5228475 176.522847,29 171,29 L10,29 C4.4771525,29 6.76353751e-16,24.5228475 0,19 L0,10 C-6.76353751e-16,4.4771525 4.4771525,1.01453063e-15 10,0 Z" id="path-1"></path>
+        <filter x="-22.9%" y="-125.9%" width="145.9%" height="386.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="13" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.141021286 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M38,23 L220,23 C225.522847,23 230,27.4771525 230,33 L230,90 C230,95.5228475 225.522847,100 220,100 L48,100 C42.4771525,100 38,95.5228475 38,90 L38,23 Z" id="path-3"></path>
+        <filter x="-21.6%" y="-47.4%" width="143.2%" height="207.8%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="13" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.141021286 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M38,23 L220,23 C225.522847,23 230,27.4771525 230,33 L230,276 C230,281.522847 225.522847,286 220,286 L48,286 C42.4771525,286 38,281.522847 38,276 L38,23 Z" id="path-5"></path>
+        <filter x="-21.6%" y="-13.9%" width="143.2%" height="131.6%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="13" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.141021286 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M10,0 L49,0 L49,19 C49,24.5228475 44.5228475,29 39,29 L10,29 C4.4771525,29 6.76353751e-16,24.5228475 0,19 L0,10 C-6.76353751e-16,4.4771525 4.4771525,1.01453063e-15 10,0 Z" id="path-7"></path>
+        <filter x="-84.7%" y="-125.9%" width="269.4%" height="386.2%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="13" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.141021286 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="animation_2" transform="translate(0.000000, 21.000000)">
+            <g id="message_1" transform="translate(46.000000, 0.000000)">
+                <g id="Rectangle-11-Copy" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#2978FB" xlink:href="#path-1"></use>
+                </g>
+                <text id="Hi,-I-want-to-distri" font-family="Helvetica" font-size="11" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="11" y="17">Hi, I want to distribute dividends.</tspan>
+                </text>
+            </g>
+            <g id="message_2" transform="translate(0.000000, 44.000000)">
+                <g id="Rectangle-11" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#FAFAFA" xlink:href="#path-3"></use>
+                </g>
+                <text id="Sure!-We-can-distrib" font-family="Helvetica" font-size="11" font-weight="normal" fill="#2A2A2A">
+                    <tspan x="49" y="44">Sure! We can distribute interim </tspan>
+                    <tspan x="49" y="57">dividends now. You have </tspan>
+                    <tspan x="49" y="70">S$14,540 profit. Do you want to </tspan>
+                    <tspan x="49" y="83">distribute all of it?</tspan>
+                </text>
+                <text id="Osome" font-family="Helvetica" font-size="11" font-weight="normal" fill="#000000" fill-opacity="0.5">
+                    <tspan x="38" y="13">Osome</tspan>
+                </text>
+                <g id="logo">
+                    <g id="Group">
+                        <g fill-rule="nonzero">
+                            <ellipse id="Oval" fill="#2978FD" cx="15.9117576" cy="15.5" rx="15.9117576" ry="15.5"></ellipse>
+                            <path d="M4.76121212,15.8386154 C4.68993939,15.8386154 4.61042424,15.8305077 4.5430303,15.8142923 C4.03861792,15.6873313 3.72991521,15.187029 3.84824242,14.6882769 C4.34084848,12.5683538 6.26860606,11.0588923 8.50036364,11.0460154 C10.7195152,11.0460154 12.6414545,12.5426 13.1563636,14.6882769 C13.2766078,15.1872163 12.9670898,15.6886276 12.4615758,15.8138154 C11.9587879,15.9363846 11.4564848,15.6263846 11.3309091,15.1208462 C11.0288485,13.8298154 9.85115152,12.9126923 8.49212121,12.9098308 C7.14375758,12.9098308 5.97963636,13.8193231 5.65721212,15.1246615 C5.56627235,15.5402225 5.19335392,15.8373727 4.76121212,15.8386154 Z M27.0627879,15.8386154 C26.6282001,15.8342528 26.2521221,15.540155 26.1498182,15.1246615 C25.8492121,13.8336308 24.6739394,12.9150769 23.3149091,12.9098308 C21.9621818,12.9098308 20.8024242,13.8193231 20.48,15.1246615 C20.3603938,15.6216 19.8561362,15.9309976 19.3498182,15.8181077 C18.84122,15.6914168 18.5311151,15.1855763 18.6545455,14.6839846 C19.1471515,12.5640615 21.0749091,11.0546 23.3066667,11.0417231 C25.5258182,11.0417231 27.4477576,12.5387846 27.9631515,14.6839846 C28.0836672,15.1832291 27.7738241,15.6850294 27.2678788,15.81 C27.2135758,15.8262154 27.1418182,15.8343231 27.0627879,15.8343231 L27.0627879,15.8386154 Z" id="Shape" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="message_4" transform="translate(0.000000, 185.000000)">
+                <g id="Rectangle-11" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                    <use fill="#FAFAFA" xlink:href="#path-5"></use>
+                </g>
+                <path d="M115,208 C137.09139,208 155,190.09139 155,168 C155,145.90861 137.09139,128 115,128" id="awesome" stroke="#814AE2" stroke-width="27" fill-rule="nonzero" transform="translate(135.000000, 168.000000) rotate(90.000000) translate(-135.000000, -168.000000) "></path>
+                <path d="M95,148 C117.09139,148 135,130.09139 135,108" id="leonard" stroke="#5DC772" stroke-width="27" fill-rule="nonzero" transform="translate(115.000000, 128.000000) scale(1, -1) rotate(90.000000) translate(-115.000000, -128.000000) "></path>
+                <path d="M135,148 C157.09139,148 175,130.09139 175,108" id="felix" stroke="#2A78FB" stroke-width="27" fill-rule="nonzero" transform="translate(155.000000, 128.000000) scale(-1, -1) rotate(90.000000) translate(-155.000000, -128.000000) "></path>
+                <text id="Ok!-According-to-the" font-family="Helvetica" font-size="11" font-weight="normal" fill="#2A2A2A">
+                    <tspan x="49" y="44">Ok! According to the </tspan>
+                    <tspan x="49" y="57">shareholders’ structure, here’s </tspan>
+                    <tspan x="49" y="70">what everybody is going to get:</tspan>
+                </text>
+                <text id="Awesome-world-Felix" font-family="Helvetica" font-size="11" font-weight="normal" line-spacing="20" fill="#2A2A2A">
+                    <tspan x="58" y="227">Awesome world </tspan>
+                    <tspan x="58" y="247">Felix Wilson </tspan>
+                    <tspan x="58" y="267">Leonard Pena </tspan>
+                </text>
+                <text id="S$7,270-S$3,635-S$3," font-family="Helvetica" font-size="11" font-weight="normal" line-spacing="20" fill="#2A2A2A">
+                    <tspan x="177" y="227">S$7,270</tspan>
+                    <tspan x="177" y="247">S$3,635</tspan>
+                    <tspan x="177" y="267">S$3,635</tspan>
+                </text>
+                <text id="50%-25%-25%" font-family="Helvetica" font-size="11" font-weight="normal" line-spacing="20" fill="#2A2A2A">
+                    <tspan x="146" y="227">50%</tspan>
+                    <tspan x="146" y="247">25%</tspan>
+                    <tspan x="146" y="267">25%</tspan>
+                </text>
+                <circle id="Oval-4" fill="#814AE2" fill-rule="nonzero" cx="51.5" cy="226.5" r="2.5"></circle>
+                <circle id="Oval-4-Copy" fill="#2A78FB" fill-rule="nonzero" cx="51.5" cy="246.5" r="2.5"></circle>
+                <circle id="Oval-4-Copy-2" fill="#5DC772" fill-rule="nonzero" cx="51.5" cy="267.5" r="2.5"></circle>
+                <text id="Osome" font-family="Helvetica" font-size="11" font-weight="normal" fill="#000000" fill-opacity="0.5">
+                    <tspan x="38" y="13">Osome</tspan>
+                </text>
+                <g id="logo">
+                    <g id="Group">
+                        <g fill-rule="nonzero">
+                            <ellipse id="Oval" fill="#2978FD" cx="15.9117576" cy="15.5" rx="15.9117576" ry="15.5"></ellipse>
+                            <path d="M4.76121212,15.8386154 C4.68993939,15.8386154 4.61042424,15.8305077 4.5430303,15.8142923 C4.03861792,15.6873313 3.72991521,15.187029 3.84824242,14.6882769 C4.34084848,12.5683538 6.26860606,11.0588923 8.50036364,11.0460154 C10.7195152,11.0460154 12.6414545,12.5426 13.1563636,14.6882769 C13.2766078,15.1872163 12.9670898,15.6886276 12.4615758,15.8138154 C11.9587879,15.9363846 11.4564848,15.6263846 11.3309091,15.1208462 C11.0288485,13.8298154 9.85115152,12.9126923 8.49212121,12.9098308 C7.14375758,12.9098308 5.97963636,13.8193231 5.65721212,15.1246615 C5.56627235,15.5402225 5.19335392,15.8373727 4.76121212,15.8386154 Z M27.0627879,15.8386154 C26.6282001,15.8342528 26.2521221,15.540155 26.1498182,15.1246615 C25.8492121,13.8336308 24.6739394,12.9150769 23.3149091,12.9098308 C21.9621818,12.9098308 20.8024242,13.8193231 20.48,15.1246615 C20.3603938,15.6216 19.8561362,15.9309976 19.3498182,15.8181077 C18.84122,15.6914168 18.5311151,15.1855763 18.6545455,14.6839846 C19.1471515,12.5640615 21.0749091,11.0546 23.3066667,11.0417231 C25.5258182,11.0417231 27.4477576,12.5387846 27.9631515,14.6839846 C28.0836672,15.1832291 27.7738241,15.6850294 27.2678788,15.81 C27.2135758,15.8262154 27.1418182,15.8343231 27.0627879,15.8343231 L27.0627879,15.8386154 Z" id="Shape" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="message_3" transform="translate(178.000000, 154.000000)">
+                <g id="Rectangle-11-Copy" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                    <use fill="#2978FB" xlink:href="#path-7"></use>
+                </g>
+                <text id="Yeah" font-family="Helvetica" font-size="11" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="12.3100586" y="17">Yeah</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

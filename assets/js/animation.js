@@ -5,7 +5,7 @@ $(function () {
   animReset();
 
   function animReset() {
-    $svg.find('#message_1, #message_2, #message_3, #message_4, #message_5, #popup').css({
+    $svg.find('#message_1, #message_2, #message_3, #message_4, #message_5, #popup, #message_6, #message_7, #message_8, #message_9, #message_10').css({
       'opacity': '0',
       'transform-origin': 'center'
     })
@@ -38,12 +38,34 @@ $(function () {
     $svg.find('#message_5').css({
       'transform': 'translate(50px, 416px)',
     });
+    
+    $svg.find('#message_6').css({
+      'transform': 'translate(46px, 10px)',
+    });
+    
+    $svg.find('#message_7').css({
+      'transform': 'translate(0px, 54px)',
+    });
+    
+    $svg.find('#message_8').css({
+      'transform': 'translate(178px, 164px)',
+    });
+    
+    $svg.find('#message_9').css({
+      'transform': 'translate(0, 195px)',
+    });
+    
+    $svg.find('#awesome, #leonard, #felix').css({
+      'stroke-dasharray': '1060 1060',
+      'stroke-dashoffset': '1060'
+    });
 
   }
 
-  function startAnim() {
+  
+  function startAnim_1() {
 
-    if ($svg.is(':not(.animated-run)')) {
+    if ($svg.find('#animation_1').is(':not(.animated-run)')) {
 
       var s = 0;
       
@@ -127,30 +149,111 @@ $(function () {
 
     }
 
-    $svg.addClass('animated-run');
+    $svg.find('#animation_1').addClass('animated-run');
 
   };
   
-  function animation_1_hide(){
-    $svg.find('#animation_1').css({
+  function startAnim_2() {
+
+    if ($svg.find('#animation_2').is(':not(.animated-run)')) {
+
+      var s = 0;
+      
+      setTimeout(function () {
+        $svg.find('#message_6').css({
+          'opacity': '1',
+          'transform': 'translate(46px, 0)',
+          'transition': 'all .2s ease'
+        });
+        
+        $svg.find('#message_6 .message').addClass('message-show');
+        
+      }, s += 100);
+      
+      setTimeout(function () {
+        $svg.find('#message_7').css({
+          'opacity': '1',
+          'transform': 'translate(0, 44px)',
+          'transition': 'all .2s ease'
+        });
+        
+        $svg.find('#message_7 .message').addClass('message-show');
+        
+      }, s += 800);
+      
+      setTimeout(function () {
+        $svg.find('#message_8').css({
+          'opacity': '1',
+          'transform': 'translate(178px, 154px)',
+          'transition': 'all .2s ease'
+        });
+        
+        $svg.find('#message_8 .message').addClass('message-show');
+        
+      }, s += 800);
+      
+      setTimeout(function () {
+        $svg.find('#message_9').css({
+          'opacity': '1',
+          'transform': 'translate(0, 185px)',
+          'transition': 'all .2s ease'
+        });
+        
+        $svg.find('#message_9 .message').addClass('message-show');
+        
+      }, s += 800);
+      
+      setTimeout(function () {
+        $svg.find('#awesome').css({
+          'stroke-dashoffset': '0',
+          'transition': 'all 2s ease'
+        });
+        
+      }, s += 300);
+      
+      setTimeout(function () {
+        $svg.find('#felix').css({
+          'stroke-dashoffset': '0',
+          'transition': 'all 2s ease'
+        });
+        
+      }, s += 500);
+      
+      setTimeout(function () {
+        $svg.find('#leonard').css({
+          'stroke-dashoffset': '0',
+          'transition': 'all 2s ease'
+        });
+        
+      }, s += 500);
+      
+      
+      
+    }
+    
+    $svg.find('#animation_2').addClass('animated-run');
+    
+  }
+  
+  function animation_hide(i){
+    $svg.find('#animation_'+i).css({
       'opacity' : 0,
       'transition' : 'all .2s ease'
     });
     
   }
   
-  function animation_1_show(){
-    $svg.find('#animation_1').css({
+  function animation_show(i){
+    $svg.find('#animation_'+i).css({
       'opacity' : 1,
       'transition' : 'all .2s ease'
     });
-    
   }
 
-  window.startAnim_1 = startAnim;
-  window.animReset = animReset;
+  window.startAnim_1 = startAnim_1;
+  window.startAnim_2 = startAnim_2;
   
-  window.animation_1_hide = animation_1_hide;
-  window.animation_1_show = animation_1_show;
+  window.animation_hide = animation_hide;
+  window.animation_show = animation_show;
 
 });

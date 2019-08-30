@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: system,-apple-system,BlinkMacSystemFont,\.SFNSDisplay-Regular,Helvetica\ Neue,Lucida\ Grande,Arial,sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 200;
   letter-spacing: .5px;
   font-size: 24px;
@@ -67,7 +67,8 @@ h1 {
 }
 
 h1 strong {
-  letter-spacing: 1px;
+  font-weight: 600;
+  letter-spacing: .3px;
 }
 
 h2 {
