@@ -56,7 +56,17 @@ $(function(){
 
     }
     
-    console.log(active)
+    if ( active == '#screen_3' || active == '#screen_4' ){
+      window.startAnim_3();
+      window.animation_show(3);
+      
+
+    } else {
+      window.animation_hide(3);
+      
+    }
+    
+    console.log(active);
     
   }
   

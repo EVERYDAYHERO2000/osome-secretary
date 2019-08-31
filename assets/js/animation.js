@@ -5,7 +5,7 @@ $(function () {
   animReset();
 
   function animReset() {
-    $svg.find('#message_1, #message_2, #message_3, #message_4, #message_5, #popup, #message_6, #message_7, #message_8, #message_9, #message_10').css({
+    $svg.find('#message_1, #message_2, #message_3, #message_4, #message_5, #popup, #message_6, #message_7, #message_8, #message_9, #message_10, #message_11, #message_12, #message_13, #message_14').css({
       'opacity': '0',
       'transform-origin': 'center'
     })
@@ -58,6 +58,26 @@ $(function () {
     $svg.find('#awesome, #leonard, #felix').css({
       'stroke-dasharray': '1060 1060',
       'stroke-dashoffset': '1060'
+    });
+    
+    $svg.find('#message_10').css({
+      'transform': 'translate(178px, 490px)',
+    });
+    
+    $svg.find('#message_11').css({
+      'transform': 'translate(61px, 10px)',
+    });
+    
+    $svg.find('#message_12').css({
+      'transform': 'translate(0, 60px)',
+    });
+    
+    $svg.find('#message_13').css({
+      'transform': 'translate(38px, 149px)',
+    });
+    
+    $svg.find('#message_14').css({
+      'transform': 'translate(157px, 430px)',
     });
 
   }
@@ -225,13 +245,86 @@ $(function () {
           'transition': 'all 2s ease'
         });
         
-      }, s += 500);
+      }, s += 300);
+      
+      
+      setTimeout(function () {
+        
+        $svg.find('#message_6').css({
+          'opacity': '0',
+        });
+        
+        $svg.find('#scroll_1').css({
+          'transform': 'translate(0, -50px)', 
+          'transition': 'all .2s ease'
+        });
+        
+      }, s += 1200);
+      
+      
+      setTimeout(function () {
+        
+        $svg.find('#message_10').css({
+          'opacity': '1',
+          'transform': 'translate(178px, 480px)',
+          'transition': 'all .2s ease'
+        });
+        
+        $svg.find('#message_10 .message').addClass('message-show');
+        
+      }, s += 200);
       
       
       
     }
     
     $svg.find('#animation_2').addClass('animated-run');
+    
+  }
+  
+  function startAnim_3() {
+
+    if ($svg.find('#animation_3').is(':not(.animated-run)')) {
+
+      var s = 0;
+      
+      setTimeout(function () {
+        $svg.find('#message_11').css({
+          'opacity': '1',
+          'transform': 'translate(61px, 0)',
+          'transition': 'all .2s ease'
+        });
+        
+      }, s += 100);
+      
+      setTimeout(function () {
+        $svg.find('#message_12').css({
+          'opacity': '1',
+          'transform': 'translate(0, 50px)',
+          'transition': 'all .2s ease'
+        });
+        
+      }, s += 500);
+      
+      setTimeout(function () {
+        $svg.find('#message_13').css({
+          'opacity': '1',
+          'transform': 'translate(38px, 139px)',
+          'transition': 'all .2s ease'
+        });
+        
+      }, s += 500);
+      
+      setTimeout(function () {
+        $svg.find('#message_14').css({
+          'opacity': '1',
+          'transform': 'translate(157px, 420px)',
+          'transition': 'all .2s ease'
+        });
+        
+      }, s += 1000);
+      
+    }
     
   }
   
@@ -244,6 +337,7 @@ $(function () {
   }
   
   function animation_show(i){
+    
     $svg.find('#animation_'+i).css({
       'opacity' : 1,
       'transition' : 'all .2s ease'
@@ -252,6 +346,7 @@ $(function () {
 
   window.startAnim_1 = startAnim_1;
   window.startAnim_2 = startAnim_2;
+  window.startAnim_3 = startAnim_3;
   
   window.animation_hide = animation_hide;
   window.animation_show = animation_show;
