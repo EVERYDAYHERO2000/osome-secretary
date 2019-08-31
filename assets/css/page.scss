@@ -11,6 +11,11 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: subpixel-antialiased;
   overflow-x: hidden;
+  
+  @media screen and (max-width: 500px) {
+    font-size:16px;  
+  }
+  
 }
 
 .page {
@@ -33,6 +38,11 @@ body {
   max-width: 1200px;
   padding: 2rem 4rem;
   box-sizing: border-box;
+  
+  @media screen and (max-width: 500px) {
+    padding: 1rem;
+  }
+  
 }
 
 .screen {
@@ -46,6 +56,13 @@ body {
   height: 85vh;
   min-height: 85vh;
   max-height: 85vh;
+  
+  @media screen and (max-width: 500px) {
+    height: 65vh;
+    min-height: 65vh;
+    max-height: 65vh;
+  }
+  
 }
 
 .screen__part-auto {
@@ -64,6 +81,11 @@ h1 {
   font-weight: 200;
   margin:0;
   line-height: 1.2;
+  
+  @media screen and (max-width: 500px) {
+    font-size: 32px;
+  }
+  
 }
 
 h1 strong {
@@ -76,6 +98,11 @@ h2 {
   font-weight: 200;  
   margin:0;
   line-height: 1.2;
+  
+  @media screen and (max-width: 500px) {
+    font-size: 32px;  
+  }
+  
 }
 
 h4 {
@@ -146,6 +173,17 @@ p {
   min-height: 100vh;
   max-height: 100vh;
   animation: start 2s 1s ease alternate forwards;
+  
+  @media screen and (max-width: 500px) {
+    height: 65vh;
+    min-height: 65vh;
+    max-height: 65vh;
+    animation: none; 
+    background-position: 75% 81%;
+    background-size: 371%;
+  }
+  
+  
 }
 
 #cover_2 {
