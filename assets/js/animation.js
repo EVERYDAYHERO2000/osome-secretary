@@ -1,10 +1,10 @@
 $(function () {
 
-  var $svg = $('.promo svg');
+  var $svg = $('.promo-phone-animation');
 
-  animReset();
+  animReset($svg);
 
-  function animReset() {
+  function animReset($svg) {
     $svg.find('#message_1, #message_2, #message_3, #message_4, #message_5, #popup, #message_6, #message_7, #message_8, #message_9, #message_10, #message_11, #message_12, #message_13, #message_14').css({
       'opacity': '0',
       'transform-origin': 'center'
@@ -83,11 +83,14 @@ $(function () {
   }
 
   
-  function startAnim_1() {
+  function startAnim_1($svg) {
 
+   
+    
     if ($svg.find('#animation_1').is(':not(.animated-run)')) {
 
       var s = 0;
+      
       
       setTimeout(function () {
         $svg.find('#message_1').css({
@@ -97,6 +100,8 @@ $(function () {
         });
         
         $svg.find('#message_1 .message').addClass('message-show');
+        
+        
 
       }, s += 100);
 
@@ -173,7 +178,7 @@ $(function () {
 
   };
   
-  function startAnim_2() {
+  function startAnim_2($svg) {
 
     if ($svg.find('#animation_2').is(':not(.animated-run)')) {
 
@@ -282,7 +287,7 @@ $(function () {
     
   }
   
-  function startAnim_3() {
+  function startAnim_3($svg) {
 
     if ($svg.find('#animation_3').is(':not(.animated-run)')) {
 
@@ -328,7 +333,7 @@ $(function () {
     
   }
   
-  function animation_hide(i){
+  function animation_hide(i, $svg){
     $svg.find('#animation_'+i).css({
       'opacity' : 0,
       'transition' : 'all .2s ease'
@@ -336,7 +341,7 @@ $(function () {
     
   }
   
-  function animation_show(i){
+  function animation_show(i, $svg){
     
     $svg.find('#animation_'+i).css({
       'opacity' : 1,

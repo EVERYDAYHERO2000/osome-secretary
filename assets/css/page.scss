@@ -166,7 +166,7 @@ p {
   
 }
 
-.s-screens div {
+.s-screens > div {
   @media screen and (max-width: 500px) {
     margin-bottom: 2rem;  
   }
@@ -214,7 +214,21 @@ p {
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: contain;
+  
+  @media screen and (max-width: 500px) {
+   height: 100vh; 
+        background-position: right 10% bottom;
+    background-size: 221%;  
+  }
+  
 }
+
+
+.mobile #cover_2 .s-screens {
+  height: 80vh;
+  justify-content: space-between;
+}
+
 
 @keyframes start {
   0% {

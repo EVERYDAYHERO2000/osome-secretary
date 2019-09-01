@@ -1,9 +1,9 @@
 $(function(){
   
-  var $screen_1 = $('#scrren_1');
-  var $screen_2 = $('#scrren_2');
-  var $screen_3 = $('#scrren_3');
-  var $screen_4 = $('#scrren_4');
+  var $screen_1 = $('#screen_1');
+  var $screen_2 = $('#screen_2');
+  var $screen_3 = $('#screen_3');
+  var $screen_4 = $('#screen_4');
   
   var active = '';
   
@@ -37,34 +37,52 @@ $(function(){
       active = '#screen_4';
     }
     
+    var $svg_1, $svg_2, $svg_3;
+    
+    if ( $('body').is('.mobile') ){
+      
+      $svg_1 = $($('.promo-phone-animation')[0])
+      $svg_2 = $($('.promo-phone-animation')[1])
+      $svg_3 = $($('.promo-phone-animation')[2])
+      
+      
+    } else {
+      
+       $svg_1 = $svg_2 = $svg_3 = $($('.promo-phone-animation'))
+      
+    }
+    
+    
     
     if ( active == '#screen_1' ){
-      window.startAnim_1();
-      window.animation_show(1);
+      window.startAnim_1($svg_1);
+      window.animation_show(1, $svg_1);
 
     } else {
-      window.animation_hide(1);
+      window.animation_hide(1, $svg_1);
 
     }
     
     if ( active == '#screen_2' ){
-      window.startAnim_2();
-      window.animation_show(2);
+      window.startAnim_2($svg_2);
+      window.animation_show(2, $svg_2);
 
     } else {
-      window.animation_hide(2);
+      window.animation_hide(2, $svg_2);
 
     }
     
     if ( active == '#screen_3' || active == '#screen_4' ){
-      window.startAnim_3();
-      window.animation_show(3);
+      window.startAnim_3($svg_3);
+      window.animation_show(3, $svg_3);
       
 
     } else {
-      window.animation_hide(3);
+      window.animation_hide(3, $svg_3);
       
     }
+      
+  
     
     console.log(active);
     

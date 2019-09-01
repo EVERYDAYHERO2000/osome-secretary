@@ -13,7 +13,9 @@ $(function(){
     if ( $('.promo')[0].getBoundingClientRect().top < $(window).outerHeight() ){
       $('.promo').addClass('promo_visible');
       
-      window.startAnim_1();
+      var $svg = $('.promo-phone-animation'); 
+      
+      window.startAnim_1($svg);
       
     } else {
       $('.promo').removeClass('promo_visible');
