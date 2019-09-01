@@ -5,6 +5,10 @@
 .list li {
   position: relative;
   margin: 1rem 0;
+  
+  @media screen and (max-width: 500px) {
+    margin: 2rem 0;
+  }
 }
 
 .list li:before { 
@@ -17,4 +21,10 @@
   top:0;
   left:0;
   transform: translate(-41px, 7px);
+  
+  @media screen and (max-width: 500px) {
+    transform: translate(-41px, -4px);
+    
+  }
+  
 }

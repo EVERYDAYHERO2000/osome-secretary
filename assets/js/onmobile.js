@@ -10,7 +10,9 @@ $(function(){
     
     $('#cover_1').css({
       'background-image' : 'url(assets/img/cover_1_mobile.png)'
-    })
+    });
+    
+    $('.offer-mobile').append( $('.offer-price').remove().clone() );
     
   }
   

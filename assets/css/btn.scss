@@ -18,7 +18,7 @@
   white-space: nowrap;  
   
   @media screen and (max-width: 500px) {
-    width: 100%;
+    width: calc(100vw - 2rem);
     padding: .8rem 1rem .8rem 1rem;
     text-align: center;
   }
@@ -54,6 +54,10 @@
 
 .btn-group {
   margin-top: 4rem;
+  @media screen and (max-width: 500px) {
+    margin-top: 2rem;
+    min-height: 48px;
+  }
 }
 
 .btn_hidden {
@@ -77,4 +81,9 @@
   bottom: 50px;
   z-index: 10000;
   box-shadow: rgba(45, 74, 123, 0.75) 0px 10px 30px 0px;
+  
+  @media screen and (max-width: 500px) {
+    //width: calc(100vw - 2rem);
+  }
+  
 }
