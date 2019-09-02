@@ -198,7 +198,7 @@ p {
   
   @media screen and (max-width: 500px) {
     height: 65vh;
-    min-height: 65vh;
+    min-height: 500px;
     max-height: 65vh;
     animation: none; 
     background-position: 75% 81%;
@@ -216,8 +216,8 @@ p {
   background-size: contain;
   
   @media screen and (max-width: 500px) {
-   height: 100vh; 
-        background-position: right 10% bottom;
+    height: 100vh; 
+    background-position: right 10% bottom;
     background-size: 221%;  
   }
   
@@ -241,4 +241,8 @@ p {
     min-height: 85vh;
     max-height: 85vh;
   }
+}
+
+.promo-phone-animation {
+  max-width: calc(100vw - 2rem);
 }
