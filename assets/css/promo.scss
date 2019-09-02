@@ -53,6 +53,15 @@
   width: 200px;
 }
 
+.mobile .app-rate {
+    margin: -1.5rem 0 1rem;
+    text-align: left;
+    width: 100%;
+    position: static;
+    display: block;
+    transform: none;
+}
+
 .app-rate__stars {
   color: #ffc435;
   letter-spacing: 2px;

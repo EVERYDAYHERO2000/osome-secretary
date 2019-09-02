@@ -27,6 +27,8 @@ $(function(){
     
     $('#screen_3').find('.phone-mobile').append( parseSVG(phone) );
     
+    $('#screen_4').find('.phone-mobile').append($rate);
+    
     
     $('tspan').each(function(i,e){
       $(e).attr('font-size', 10)
