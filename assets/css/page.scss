@@ -97,6 +97,8 @@ h1 {
 h1 strong {
   font-weight: 600;
   letter-spacing: .3px;
+  display: block;
+  padding: 0 0 20px 0;
 }
 
 h2 {
@@ -188,24 +190,43 @@ p {
 #cover_1 {
   background-image: url(../../assets/img/cover.png);
   background-color: #f3f3f3;
-  background-position: center bottom;
+  background-position: center bottom -20px;
   background-repeat: no-repeat;
   background-size: contain;
   height: 100vh;
   min-height: 100vh;
   max-height: 100vh;
   animation: start 2s 1s ease alternate forwards;
+  transition: all .2s;
+  
+  @media screen and (max-width: 1024px) {
+    background-position: center bottom;
+  }
+  
+  @media screen and (max-width: 800px) {
+    background-size: 112%;
+  }
   
   @media screen and (max-width: 500px) {
     height: 65vh;
-    min-height: 500px;
+    min-height: 555px;
     max-height: 65vh;
     animation: none; 
     background-position: 75% 81%;
     background-size: 371%;
   }
-  
-  
+}
+
+.webp #cover_1 {
+  background-image: url(../../assets/img/cover.webp);
+}
+
+.mobile #cover_1 {
+  background-image: url(../../assets/img/cover_1_mobile.png);
+}
+
+.mobile.webp #cover_1 {
+  background-image: url(../../assets/img/cover_1_mobile.webp);
 }
 
 #cover_2 {
@@ -217,11 +238,17 @@ p {
   
   @media screen and (max-width: 500px) {
     height: 100vh; 
-    background-position: right 10% bottom;
-    background-size: 221%;  
+    background-position: right 6% bottom;
+    background-size: 200%;  
   }
   
 }
+
+.webp #cover_2 {
+  background-image: url(../../assets/img/cover_2.webp);
+}
+
+
 
 
 .mobile #cover_2 .s-screens {

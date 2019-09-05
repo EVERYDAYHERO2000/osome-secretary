@@ -22,6 +22,7 @@
 
 .promo svg {
   height: 100%;
+  width: auto;
 }
 
 .promo svg tspan {
@@ -74,6 +75,11 @@
 
 .app-rate__rate {
   font-size: 48px;
+}
+
+.app-rate__description {
+  font-size: 13px;
+  font-weight: 500;
 }
 
 .message {

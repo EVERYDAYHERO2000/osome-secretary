@@ -16,7 +16,7 @@
   font-size: 100px;
   font-weight: 700;
   line-height: 80px;
-  color: #ffc435;
+  color: #fff;
   
   @media screen and (max-width: 500px) {
     font-size: 70px;
@@ -30,4 +30,13 @@
   margin-top: 1rem;
   opacity: .5;
   font-size: 18px;
+}
+
+.offer-mobile {
+  
+}
+
+.flex-for-mobile {
+  display: flex;
+  align-items: flex-end;
 }
