@@ -107,3 +107,17 @@
     transform : translateY(0);
   }
 }
+
+#cover_3 {
+  width: 880px;
+  height: 570px;
+  background-image: url(../../assets/img/screens.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.webp #cover_3 {
+  background-image: url(../../assets/img/screens.webp);
+}
+
