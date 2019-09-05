@@ -134,3 +134,17 @@
   transition: all .5s .3s ease;
 }
 
+.mobile .main-header {
+  text-align:center;
+}
+
+.mobile h1 {
+  font-weight: 700;
+}
+
+.mobile .logo-container {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-left: 21px;
+}

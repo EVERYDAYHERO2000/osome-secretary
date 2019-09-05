@@ -4,9 +4,9 @@ $(function(){
   
   if ( $('body').is('.mobile') ){
     
-    $('h1').html(`<strong>Paperless<br>Corporate<br>Secretary</strong>
-                Your&nbsp;documents done&nbsp;right,
-                online,<br>and&nbsp;on&nbsp;time`);
+    $('.main-header').html(`<h1>Paperless<br>Corporate Secretary</h1>
+<p>Your&nbsp;documents done&nbsp;right, online,<br>and&nbsp;on&nbsp;time</p>`);
+    
     
     $('.offer-mobile').append( $('.offer-price').remove().clone() );
     

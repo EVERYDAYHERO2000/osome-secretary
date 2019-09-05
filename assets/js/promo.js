@@ -29,6 +29,7 @@ $(function(){
     } else {
       $('#cover_3').removeClass('cover_3_visible');
       
+      
     }
      
   }                   
