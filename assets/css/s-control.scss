@@ -1,0 +1,31 @@
+.s-control {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 3px;
+  left: 100%;
+  top: calc(50vh - 20px);
+  width: max-content;
+  position: -webkit-sticky;
+  position: sticky;
+  
+  height: fit-content;
+  z-index: 10000;
+}
+
+.s-control__item {
+  width: 10px;
+  height : 10px;
+  background-color: #ccc;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.s-control__item_active {
+  background-color: #2978fd;
+}
+
+.mobile .s-control {
+  display: none;
+}

@@ -82,9 +82,11 @@ $(function(){
       
     }
       
-  
-    
     console.log(active);
+    
+    $('.s-control__item').removeClass('s-control__item_active');
+    $(`.s-control__item[data-screen="${active}"]`).addClass('s-control__item_active');
+    
     
   }
   
