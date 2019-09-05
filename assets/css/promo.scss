@@ -115,6 +115,9 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  transition: all .5s .3s ease;
+  transform-origin: center;
+  transform: translateY(30px) scale(.9);
   
   @media screen and (max-width: 500px) {
     width: 100%;
@@ -124,5 +127,10 @@
 
 .webp #cover_3 {
   background-image: url(../../assets/img/screens.webp);
+}
+
+#cover_3.cover_3_visible {
+  transform: translateY(0px) scale(1);
+  transition: all .5s .3s ease;
 }
 

@@ -6,6 +6,7 @@ $(function(){
     
     detectPromo();
     
+    
   });
                      
   function detectPromo(){
@@ -19,6 +20,14 @@ $(function(){
       
     } else {
       $('.promo').removeClass('promo_visible');
+      
+    }
+    
+    if ( $('#cover_3')[0].getBoundingClientRect().top < $(window).outerHeight() ){
+      $('#cover_3').addClass('cover_3_visible');
+      
+    } else {
+      $('#cover_3').removeClass('cover_3_visible');
       
     }
      
