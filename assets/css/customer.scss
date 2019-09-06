@@ -33,4 +33,9 @@
 .customer__name {
   font-size: 18px;
   text-align: left;
+  
+  @media screen and (max-width: 500px) {
+    font-size: 15px;  
+  }
+  
 }

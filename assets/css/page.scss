@@ -119,6 +119,12 @@ h4 {
   letter-spacing: 2px;
   font-size: 1rem;
   color: rgba(255,255,255,.7);
+  
+  @media screen and (max-width: 500px) {
+    padding: 0;
+    margin:0;
+  }
+  
 }
 
 p {
@@ -209,6 +215,7 @@ p {
   
   @media screen and (max-width: 500px) {
     height: 65vh;
+    min-height: 650px;
     max-height: 65vh;
     animation: none; 
     background-position: left 93% bottom;
@@ -236,7 +243,7 @@ p {
   background-size: contain;
   
   @media screen and (max-width: 500px) {
-    height: 100vh; 
+    height: 640px; 
     background-position: right 6% bottom;
     background-size: 200%;  
   }
@@ -253,6 +260,11 @@ p {
 .mobile #cover_2 .s-screens {
   height: 80vh;
   justify-content: space-between;
+  
+  @media screen and (max-width: 500px) {
+    height: 500px;
+  }
+  
 }
 
 
@@ -279,3 +291,4 @@ p {
   flex-direction: column;
   align-items: center;
 }
+

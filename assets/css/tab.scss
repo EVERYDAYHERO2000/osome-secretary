@@ -9,6 +9,8 @@
   @media screen and (max-width: 500px) {
     font-size: 16px;
     width: auto;
+    overflow: scroll;
+    padding: 10px 0;
   }
   
 }
@@ -17,16 +19,41 @@
   margin: 0 1rem;
   padding: .5rem 0;
   cursor: pointer;
+  
+  @media screen and (max-width: 500px) {
+    font-weight: 700;
+    white-space: pre;
+    word-break: keep-all;
+    margin: 0rem .85rem;
+  }
+  
+}
+
+.tab div:first-child {
+  @media screen and (max-width: 500px) {
+    margin: 0 0 0 1rem;
+  }
+}
+
+.tab div:last-child {
+  @media screen and (max-width: 500px) {
+    margin: 0 1rem 0 0;
+  }
 }
 
 .tab + div {
   @media screen and (max-width: 500px) {
     padding: 0 1.5rem;
+    
   }
 }
 
+
 .tab div.selected {
   border-bottom: 2px solid #433b54;
+  @media screen and (max-width: 500px) {
+    
+  }
 }
 
 

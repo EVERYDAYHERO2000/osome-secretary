@@ -4,10 +4,9 @@
   flex-direction: column;
   padding: 5px 3px;
   left: 100%;
-  top: calc(50vh - 20px);
+  top: calc(50vh - 70px);
   width: max-content;
-  position: -webkit-sticky;
-  position: sticky;
+  position: absolute;
   
   height: fit-content;
   z-index: 10000;

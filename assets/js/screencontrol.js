@@ -1,6 +1,6 @@
 $(function(){
   var $sc = $('#screen-control');
-  var $screens = $sc.parent().find('.s-screens');
+  var $screens = $('#screens').find('.s-screens');
   
   
   $sc.append(function(){
