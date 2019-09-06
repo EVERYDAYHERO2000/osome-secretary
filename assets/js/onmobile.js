@@ -4,6 +4,7 @@ $(function(){
   
   if ( $('body').is('.mobile') ){
     
+    
     $('.main-header').html(`<h1>Paperless<br>Corporate Secretary</h1>
 <p>Your&nbsp;documents done&nbsp;right, online,<br>and&nbsp;on&nbsp;time</p>`);
     
@@ -40,9 +41,7 @@ $(function(){
           frag.appendChild(div.firstChild.firstChild);
         return frag;
     }
-    
-    
-    
+      
   }
   
   
