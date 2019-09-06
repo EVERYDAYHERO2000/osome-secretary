@@ -9,7 +9,7 @@ $(function(){
     img.onerror = function() {
       hasWebP = false;
     };
-    img.src = '/assets/img/bizfile.webp';
+    img.src = 'assets/img/bizfile.webp';
   })();
   
 });

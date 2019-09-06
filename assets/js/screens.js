@@ -14,10 +14,8 @@ $(function(){
   });
   
   function position(){
-    
     var e = $screen_1[0].getBoundingClientRect();
-    var top = 0;
-    var height = $(window).outerHeight();
+    var height = ( $('body').is('.mobile') ) ? -100 : $(window).outerHeight();
     
     active = '';
     

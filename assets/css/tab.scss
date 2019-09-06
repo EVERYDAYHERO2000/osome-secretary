@@ -38,12 +38,13 @@
 .tab div:last-child {
   @media screen and (max-width: 500px) {
     margin: 0 1rem 0 0;
+    padding-right: 1rem;
   }
 }
 
 .tab + div {
   @media screen and (max-width: 500px) {
-    padding: 0 1.5rem;
+    padding: 0rem;
     
   }
 }
