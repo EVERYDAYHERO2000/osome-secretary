@@ -201,19 +201,19 @@ p {
 }
 
 #cover_1 {
-  background-image: url(../../assets/img/cover_3.png);
+  background-image: url(../../assets/img/cover_4.png);
   background-color: #f3f3f3;
   background-position: center bottom -20px;
   background-repeat: no-repeat;
-  background-size: auto 100%;
-  height: 100vh;
-  min-height: 100vh;
-  max-height: 100vh; 
-  animation: start 2s 1s ease alternate forwards;
+  background-size: auto 90%;
+  height: 80vh;
+  min-height: 80vh;
+  max-height: 80vh; 
+  //animation: start 2s 1s ease alternate forwards;
   transition: all .2s;
   
   @media screen and (max-width: 1024px) {
-    background-position: center bottom -40px;
+    background-position: center bottom -50px;
   }
   
   @media screen and (max-width: 800px) {
@@ -225,22 +225,18 @@ p {
     min-height: 660px;
     max-height: 65vh;
     animation: none; 
-    background-position: left 93% bottom;
+    background-position: left 95% bottom;
     background-size: 311%;
   }
 }
 
-.webp #cover_1 {
-  background-image: url(../../assets/img/cover_3.webp);
-}
+
 
 .mobile #cover_1 {
-  background-image: url(../../assets/img/cover_3_mobile.png);
+  background-image: url(../../assets/img/cover_4_mobile.png);
 }
 
-.mobile.webp #cover_1 {
-  background-image: url(../../assets/img/cover_3_mobile.webp); 
-}
+
 
 #cover_2 {
   background-color: #F3F3F3;
@@ -257,9 +253,7 @@ p {
   
 }
 
-.webp #cover_2 {
-  background-image: url(../../assets/img/cover_2.webp);
-}
+
 
 
 

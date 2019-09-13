@@ -62,12 +62,16 @@
   max-height: 0;
   opacity: 0;
   transition: all .3s ease;
+  
+
+}
+
+.qa__description p {
   font-size: 18px;
 
   @media screen and (max-width: 500px) {
     font-size: 16px;
   }
-
 }
 
 .qa__i.qa__i_visible .qa__description {
