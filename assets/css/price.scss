@@ -45,3 +45,14 @@
   display: flex;
   align-items: flex-end;
 }
+
+.price-s {
+  white-space: nowrap;
+  word-break: keep-all;
+  font-size: 32px;
+  color: #ef5d8f;
+}
+
+.price-s span {
+  font-weight: 600;
+}

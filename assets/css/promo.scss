@@ -139,6 +139,11 @@
 
 .mobile .main-header { 
   text-align:center;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
 }
 
 .mobile h1 {

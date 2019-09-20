@@ -5,8 +5,10 @@ $(function(){
   if ( $('body').is('.mobile') ){
     
     
-    $('.main-header').html(`<h1>Paperless<br>Corporate Secretary</h1>
-<p>Your&nbsp;documents done&nbsp;right, online,<br>and&nbsp;on&nbsp;time</p>`);
+    $('.main-header').html(`<div><h1>Paperless<br>Corporate Secretary</h1>
+<p>Your&nbsp;documents done&nbsp;right, online,<br>and&nbsp;on&nbsp;time</p></div><div class="btn-group">
+                  <a href="https://my.osome.com/?start=secretary&branch=SG" class="btn" id="pos_1">Contact us</a>
+                </div>`);
     
     
     $('.offer-mobile').append( $('.offer-price').remove().clone() );

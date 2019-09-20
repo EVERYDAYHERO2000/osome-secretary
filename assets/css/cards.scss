@@ -1,0 +1,122 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  margin: -1rem 0;
+  
+  @media screen and (max-width: 500px) {
+    overflow-x: scroll;
+    margin: 0 -1rem;
+    padding: 0 1rem;
+    justify-content: flex-start;
+  }
+  
+}
+
+.card {
+  flex-basis: 350px;
+  margin: 1rem;
+  padding: 2rem;
+  transition: all .2s ease;
+  border-radius: 8px;
+  background-color: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,.01);
+  
+  @media screen and (max-width: 500px) {
+    flex-basis: 80vw;
+    padding: 1rem;
+    margin: .5rem;
+  }
+  
+}
+
+.card-header {
+  display:flex;
+  align-items: baseline;
+}
+
+.card .description {
+  font-size: 16px;
+  color: rgba(255,255,255,0.7);
+}
+
+.card:hover {
+  background-color: rgba(255,255,255,0.1);
+  transition: all .2s ease;
+}
+
+.compare-list {
+  font-size: 16px;
+  list-style: none;
+  margin: 1.5rem -2rem;
+  padding: .1rem 3.1rem;
+  color: rgba(255,255,255,0.7);
+  border-top: 1px solid rgba(255,255,255,.05);
+  border-bottom: 1px solid rgba(255,255,255,.05);
+  
+  @media screen and (max-width: 500px) {
+    margin: 1.5rem -1rem;
+    padding: .1rem 2.1rem;
+  }
+  
+}
+
+.compare-list li {
+  margin : 1.5rem 0;
+  position: relative;
+  
+  @media screen and (max-width: 500px) {
+    max-width: 200px;
+  }
+}
+
+.compare-list li.exclude {
+  opacity: .3;
+}
+
+.compare-list li:before {
+  content: '';
+    background: url(../../assets/img/list-item-s.svg);
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-25px,4px);
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.card .btn-group {
+  margin-top: 2rem;
+}
+
+.card .btn {
+  width: 100%;
+  opacity: 0.1;
+  text-align: center;
+  padding: .8rem 1.4rem;
+  
+  @media screen and (max-width: 500px) {
+    opacity: 1;
+  }
+  
+}
+
+.card .btn:before {
+  content:none;
+}
+
+.card:hover .btn {
+  width: 100%;
+  opacity: 1;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0rem 2rem 0;
+  margin: 1.5rem -2rem 0;
+}
