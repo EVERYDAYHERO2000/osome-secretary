@@ -89,7 +89,7 @@ h1 {
   line-height: 1.2;
   
   @media screen and (max-width: 500px) {
-    font-size: 32px;
+    font-size: 28px;
   }
   
 }
@@ -108,13 +108,13 @@ h2 {
   line-height: 1.2;
   
   @media screen and (max-width: 500px) {
-    font-size: 32px;  
+    font-size: 28px;  
   }
   
 }
 
 h3 {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 200;
 }
 
@@ -228,7 +228,7 @@ p {
   
   @media screen and (max-width: 500px) {
     height: 65vh;
-    min-height: 660px;
+    min-height: 630px;
     max-height: 65vh;
     background-position: left 105% bottom;
     background-size: 165%;

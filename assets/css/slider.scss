@@ -5,6 +5,9 @@
 .slider__outer {
   width: 100vw;
   overflow: hidden;
+  @media screen and (max-width: 500px) {
+    overflow-x: scroll;  
+  }
 }
 
 .slider__inner {
@@ -55,6 +58,10 @@
   padding: 0;
   top: 0%;
   height: 100%;
+  
+  @media screen and (max-width: 500px) {
+    pointer-events: none;  
+  }
 
 }
 
@@ -69,6 +76,7 @@
   
   @media screen and (max-width: 500px) {
       width: 50px;
+      pointer-events: all;
   }
   
 }
