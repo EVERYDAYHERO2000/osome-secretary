@@ -6,7 +6,7 @@
   width: 100vw;
   overflow: hidden;
   @media screen and (max-width: 500px) {
-    overflow-x: scroll;  
+    //overflow-x: scroll;  
   }
 }
 
@@ -75,8 +75,9 @@
   cursor: pointer;
   
   @media screen and (max-width: 500px) {
-      width: 50px;
+      width: 100px;
       pointer-events: all;
+      background-position: 1rem;
   }
   
 }

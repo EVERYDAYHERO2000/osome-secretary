@@ -7,7 +7,7 @@ $(function(){
     
     $('.main-header').html(`<div class="header-inner"><h1>Paperless<br>Corporate&nbsp;Secretary</h1>
 <p>Your&nbsp;documents done&nbsp;right, online,<br>and&nbsp;on&nbsp;time</p></div><div class="btn-group">
-                  <a href="https://my.osome.com/?start=secretary&branch=SG" class="btn" id="pos_1">Contact us</a>
+                  <a data-ga="cta_go-to-websome" data-ga-name="get-start_top" href="https://my.osome.com/?start=secretary&branch=SG" class="btn" id="pos_1">Contact us</a>
                 </div>`);
     
     

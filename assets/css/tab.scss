@@ -15,6 +15,13 @@
   
 }
 
+.tab:after {
+  content: '';
+  width: .5rem;
+  min-width: .5rem;
+  height: .5rem;
+}
+
 .tab div {
   margin: 0 1rem;
   padding: .5rem 0;
@@ -38,9 +45,10 @@
 .tab div:last-child {
   @media screen and (max-width: 500px) {
     margin: 0 1rem 0 0;
-    padding-right: 1rem;
   }
 }
+
+
 
 .tab + div {
   @media screen and (max-width: 500px) {
