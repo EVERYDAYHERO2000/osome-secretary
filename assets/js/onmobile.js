@@ -34,6 +34,27 @@ $(function(){
     })
     
     
+    $('.card').click(function(){
+      
+      var offset;
+    
+      if ( $(this).data('c') == 0 ){
+        offset = 0;
+
+      } else {
+        offset = 300;
+
+      } 
+
+
+
+      $(this).parent().animate({
+        scrollLeft : offset
+      },300);
+      
+    });
+    
+    
     
     function parseSVG(s) {
         var div = document.createElementNS('http://www.w3.org/1999/xhtml', 'div');

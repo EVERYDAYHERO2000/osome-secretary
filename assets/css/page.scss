@@ -206,17 +206,17 @@ p {
 }
 
 #cover_1 {
-  background-image: url(../../assets/img/cover_2.png); 
+  background-image: url(../../assets/img/agents.png), url(../../assets/img/background.png); 
   background-color: #f3f3f3;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: auto 90%;
+  background-position: center bottom -1px,top;
+  background-repeat: no-repeat, repeat;
+  background-size: auto 50%, 150px;
   height: 80vh;
   min-height: 80vh;
   max-height: 80vh; 
   //animation: start 2s 1s ease alternate forwards;
   transition: all .2s;
-  background-attachment: fixed;
+  background-attachment:scroll;
   
   @media screen and (max-width: 1024px) {
     background-position: center bottom -50px;
@@ -230,9 +230,23 @@ p {
     height: 65vh;
     min-height: 570px;
     max-height: 65vh;
-    background-position: left 115% bottom -20%;
-    background-size: 150%;
+    background-size: 300%, 100px;
     background-attachment: scroll;
+    background-position-x: -43%;
+    background-position-y: calc(100% + 5px);
+    background-repeat-x: repeat;
+    animation: scroll-bg 20s infinite linear;
+
+  }
+}
+
+@keyframes scroll-bg {
+  0% {
+    background-position-x: -43%;
+  }
+  100% {
+    background-position-x: 107%;
+    
   }
 }
 
@@ -241,20 +255,19 @@ p {
 
 
 
-
 #cover_2 {
   background-color: #F3F3F3;
-  background-image: url(../../assets/img/cover_2.png);
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: auto 90%;
-  background-attachment: fixed;
+  background-image: url(../../assets/img/agent_2.png), url(../../assets/img/background.png);
+  background-position: right 5vw bottom, top;
+  background-repeat: no-repeat, repeat;
+  background-size: auto 90%, 250px;
+  background-attachment:scroll;
   
   @media screen and (max-width: 500px) {
     height: 640px; 
-    background-position: right 6% bottom;
-    background-size: 200%;  
-    background-attachment: scroll;
+    background-position: right 55% bottom;
+    background-size: 110%, 250px;  
+    background-attachment:scroll;
   }
   
 }

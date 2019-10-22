@@ -137,12 +137,27 @@
   transition: all .5s .3s ease;
 }
 
-.mobile .main-header { 
-  text-align:center;
-  height: 440px;
+.main-header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: calc(80vh - 11rem);
+  align-items: center;
+  
+}
+
+.main-header .header-inner {
+  text-align: center;
+}
+
+.main-header .header-inner p {
+  max-width: none;
+}
+
+.mobile .main-header { 
+  text-align:center;
+  height: 440px;
+  
   
 }
 
@@ -154,7 +169,11 @@
   font-weight: 700;
 }
 
-.mobile .logo-container {
+
+
+
+
+.logo-container {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
