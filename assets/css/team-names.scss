@@ -1,0 +1,29 @@
+.team-names {
+  font-size: 12px;
+  line-height: 20px;
+  background: #fff;
+  @media screen and (max-width: 500px) {
+    display: none; 
+  }
+}
+
+.team-names .inner {
+  display: flex;
+  padding: 1.3rem 200px;
+}
+
+.team-names_n {
+  flex-basis: 25%;
+  text-align: center;
+  margin: 0 5px;
+  font-weight: 500;
+  
+}
+
+.team-names_n .name {
+  font-weight: 600;
+}
+
+.team-names_n .prof {
+  opacity: .65;
+}

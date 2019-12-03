@@ -117,10 +117,12 @@
   //content:none;
 }
 
-.card:hover .btn {
+.card:hover .btn, .card_active .btn {
   width: 100%;
   opacity: 1;
 }
+
+
 
 .card-footer {
   display: flex;
