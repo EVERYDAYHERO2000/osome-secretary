@@ -30,7 +30,7 @@
         "gulp-watch": "^4.3.8",
         "js-beautify": "^1.8.9",
         "markdown-it": "^8.4.2",
-        "node-sass": "^4.11.0",
+        "node-sass": "^7.0.0",
         "postcss-color-function": "2.0.1",
         "postcss-custom-properties": "5.0.1",
         "postcss-easy-import": "1.0.1",
